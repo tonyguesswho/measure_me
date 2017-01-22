@@ -1,4 +1,4 @@
-@import url('http://fonts.googleapis.com/css?family=Roboto+Condensed');
+
 body{
 	background: white;
 	line-height: 1.8;
@@ -44,6 +44,23 @@ li{
 .nav.navbar-nav.navbar-right li a {
     color: white;
 }
+ .instruct{
+  	background-color: #E2E2E2;
+  	color: black;
+  	margin-bottom: 50px;
+  	
+  }
+  .instruct h4{
+  	text-transform: uppercase;
+  	font-weight: bold;
+  }
+  .tt{margin-top: 10px;}
+  .service-desc{
+  	padding-left: 100px;
+  	padding-right: 100px;
+  	padding-top: 10px;
+
+  }
 
 .button_base {
     margin: 0;
@@ -319,6 +336,84 @@ so they don't overlap */
   color: white;
   font-size: 16px;
   padding: 10px 10px;
+}
+.middle a{
+	text-decoration: none;
+}
+.top{
+	margin-left:50px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.td{
+	margin-left:38%;
+	margin-bottom: 25px;
+}
+footer{
+	background-color: #4B5054;
+	height: 200px;
+	padding: 10px;
+	color: white;
+	margin-top:50px;
+}
+.carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #f4511e;
+  }
+  .carousel-indicators li {
+      border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+      background-color: #f4511e;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .palleb{
+  	margin-top:30px;
+  }
+  .navh>li>a{
+  	background-color: black;
+  	color: white;
+  	/*border-radius: 10px;**/
+  	margin: 20px;
+  }
+.navh>li.active>a,
+.navh>li.active>a:focus,
+.navh>li.active>a:hover
+{
+	background-color: #f4511e;
+	color: white;
+
+}
+.tabcd{
+	background-color: pink;
+	height: 500px;
+	padding:15px;
+}
+.measure-in{
+resize: horizontal; 
+width: 50px;
+margin-left:30px;
+margin-bottom: 15px;
+padding: 3px;
+ 
+}
+.labl{
+	width: 180px;
+
+}
+.direction{
+	
+	margin-top: 1px;
+	margin-left: 5px;
 }
 
 

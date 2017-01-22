@@ -12,6 +12,7 @@
 	
 	</head>
 	<body>
+
 		<div class="head-img">
 		
 			<nav class="navbar navbar-default" role="navigation">
@@ -71,7 +72,7 @@
 				</div>
 				<div class="row">
 					<div class="col-md-12 text-center" style="padding-top: 100px;">
-						<a href="">
+						<a href="index2.php">
 						<div class="button_base b07_3d_double_roll">
         					<div>Get Started</div>
         					<div>Get Started</div>
