@@ -1,6 +1,7 @@
+
 <?php
 
-
+ 
 require ("database.php");
 if(!isset($_SESSION['id'])){
 	$_SESSION['redirectURL']=$_SERVER['REQUEST_URI'];
@@ -54,13 +55,14 @@ $result=$db->query($sql);
 ?>
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Design</title>
+		<title>Title Page</title>
 
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 		
@@ -69,7 +71,9 @@ $result=$db->query($sql);
 	
 	</head>
 	<body>
-		<nav class="navbar navbar-default" role="navigation">
+
+
+	<nav class="navbar navbar-default" role="navigation">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -89,13 +93,13 @@ $result=$db->query($sql);
 						  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="text-decoration: none; color: white;">&times;</a>
 
 						  <!-- Overlay content -->
-						 <div class="overlay-content">
+						  <div class="overlay-content">
 						    <?php
 						    	if(isset($_SESSION['id'])){
 						    		
 
 						    	}else{
-						    		echo "<a href='Signup.php'>Signup</a>";
+						    		echo "<a href='Signupt.php'>Signup</a>";
 						    	}
 
 						    ?>
@@ -141,41 +145,8 @@ $result=$db->query($sql);
 				<!-- /.navbar-collapse -->
 			</div>
 		</nav>
-		<div class="container palle">
-		<div class="row palleb">
-			<div class="col-md-12">
-			<div role="tabpanel">
-				<!-- Nav tabs -->
-				<ul class="nav nav-tabs navh" role="tablist">
-					<li role="presentation" class="active ta">
-						<a href="#measurement" aria-controls="tab" role="tab" data-toggle="tab" class="taa">measurement</a>
-					</li>
-					<li role="presentation" >
-						<a href="#fabric" aria-controls="tab" role="tab" data-toggle="tab">fabric</a>
-					</li>
-					<li role="presentation">
-						<a href="#fabric" aria-controls="tab" role="tab" data-toggle="tab">fabric</a>
-					</li>
-					<li role="presentation">
-						<a href="#fabric" aria-controls="tab" role="tab" data-toggle="tab">fabric</a>
-					</li>
-					<li role="presentation">
-						<a href="#fabric" aria-controls="tab" role="tab" data-toggle="tab">fabric</a>
-					</li>
-					<li role="presentation">
-						<a href="#fabric" aria-controls="tab" role="tab" data-toggle="tab">fabric</a>
-					</li>
-					<li role="presentation">
-						<a href="#fabric" aria-controls="tab" role="tab" data-toggle="tab">fabric</a>
-					</li>
-				</ul>
-			
-				<!-- Tab panes -->
-				<div class="tab-content tabc">
-					<div role="tabpanel" class="tab-pane active" id="measurement">
-					<a href="emeasure.php"><h3 style="margin-left: 30%;">Add New Measurement</h3></a>
-
-					<a href="download.php"><p>Download Measurement Guide</p></a>
+		<div class="container">
+	<a href="download.php"><p>Download Measurement Guide</p></a>
 					<form method="POST" action="design.php" name="designf">
 					<div class="row">
 					
@@ -237,82 +208,98 @@ $result=$db->query($sql);
 
 					
 					</div>
+					<input type="submit" name="submitm" value="save" class="sbtn">
+					</form>
+					</div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<footer class="container-fluid">
+			<div class="row">
+				<div class="col-md-4 col-xs-12 text-center">
+					 <h4>ABOUT US</h4>
+
+                    <p>We enable you order bespoke clothings from the comfort of your home</p>
+
+                    <hr>
+
+                    <h4>JOIN OUR MONTHLY NEWSLETTER</h4>
+
+                    <form>
+                        <div class="input-group">
+
+                            <input type="email" class="form-control" placeholder="email">
+
+                            <span class="input-group-btn">
+
+                        <button class="btn btn-default" type="button">Join</button>
+
+                            </span>
+
+                        </div>
+                        
+                    </form>
+
+                    <hr class="hidden-md hidden-lg hidden-sm">
+
+				</div>
+				<div class="col-md-4 col-xs-12 text-center">
+					<div id="address">
+						<h4>Address</h4>
+						<p>No 10 Alara street Sabo Yabo Lagos State.</p>
+					</div>
+					<div>
+						<p>All Rights Reserved</p>
+						<p>&copy; 2017 measure.me</p>
+							
+					</div>
+				</div>
+				<div class="col-md-4 col-xs-12 text-center">
+					<span class="fspan">
+					<img src="img/u71.png">
+					<img src="img/u73.png">
+					<img src="img/u75.png">
+					<img src="img/u79.png">
+					<img src="img/u77.png">
+					</span><br><br>
+					
+				</div>
+				
+			
+			
+
+                        <p class="text-center">Not registered yet?</p>
+                        <p class="text-center"><a href="signup.php"><strong>Sign Up</strong></a>! It is easy and gives you access to full features of measure.me</p>
+
+            </div>
+                
+            
+       
+	
+		</footer>
 					
 
 
-					</div>
-					<input type="submit" name="submitm" value="save">
-					</form>
-					<div role="tabpanel" class="tab-pane" id="fabric">fabric
-
-					</div>
-					<div role="tabpanel" class="tab-pane" id="fabric">fabric</div>
-					<div role="tabpanel" class="tab-pane" id="fabric">fabric</div>
-					<div role="tabpanel" class="tab-pane" id="fabric">fabric</div>
-					<div role="tabpanel" class="tab-pane" id="fabric">fabric</div>
-					<div role="tabpanel" class="tab-pane" id="fabric">fabric</div>
-
-
-				</div>
-			</div>
-
-
-
-
-
-
-
-
-
-
-
-
-			</div>
-			
-
-		</div>
-		<a href="account.php"><button type="button" class="btn btn-default" style="margin-left: 30%">Add to order box </button></a>
-			
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		</div>
-		<footer id="footd">
-			<h5 class="text-center">&copy; 2017 measure.me</h5>
-		</footer>
-
-
-
-
-		
-
+	
 		<script src="js/jquery.min.js"></script>
 		<!-- Bootstrap JavaScript -->
 		<script src="bootstrap/js/bootstrap.min.js"></script>

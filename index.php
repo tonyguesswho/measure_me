@@ -1,3 +1,27 @@
+
+<?php
+	require("database.php");
+	
+
+if(isset($_SESSION['id'])){
+	echo 'welcome'.' '. $_SESSION['firstname'];
+
+
+}
+
+
+ 
+
+	
+
+
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="">
 	<head>
@@ -20,7 +44,7 @@
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
 					
-					<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+					<a class="navbar-brand" href="index.php"><img src="img/logo.png"></a>
 				</div>
 		
 				<!-- Collect the nav links, forms, and other content for toggling -->
@@ -36,10 +60,36 @@
 
 						  <!-- Overlay content -->
 						  <div class="overlay-content">
-						    <a href="#">Signup</a>
-						    <a href="#">Login</a>
-						    <a href="#">Account</a>
-						    <a href="#">Design</a>
+						    <?php
+						    	if(isset($_SESSION['id'])){
+						    		
+
+						    	}else{
+						    		echo "<a href='Signup.php'>Signup</a>";
+						    	}
+
+						    ?>
+						    <?php
+						    	if(isset($_SESSION['id'])){
+						    		echo "<a href='logout.php'>Logout</a>";
+
+						    	}else{
+						    		echo "<a href='login.php'>Login</a>";
+						    	}
+
+						    ?>
+						     <?php
+						    	if(isset($_SESSION['id'])){
+						    		echo "<a href='account.php'>Account</a>";
+
+						    	}else{
+						    		echo" <a href='login.php'>Account</a>";
+						    	}
+
+						    ?>
+						    
+						    
+						    <a href="index2.php">Designs</a>
 						    <span class="social-span">
 						    <img src="img/u43.png">
 						    <img src="img/u49.png">
@@ -93,7 +143,7 @@
 			
 			</div>
 			</div>
-		 
+			
 		
 					
 
