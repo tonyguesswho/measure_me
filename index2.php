@@ -160,7 +160,22 @@ require('database.php');
 			</div>
 		</div>
 
-		
+		<?php
+		@$session_id=$_SESSION['id'];
+		if(isset($_POST['designbtn'])){
+			$product_id=$_POST['submitb'];
+			$bquery="INSERT INTO orders (user_id,product_id) VALUES ('$session_id','$product_id')";
+
+			$result4=$db->query($bquery);
+
+		}
+
+			
+
+
+
+
+		?>
 
 		
 		
@@ -179,7 +194,11 @@ require('database.php');
 							<div href="#" class="thumbnail ov">
 								<img src="img/shirt.jpg" class="img-rounded img-reponsive image">
 								<div class="middle">
-									<a href="design.php"><div class="text">Design</div></a>
+								<form method="post">
+								<input type="hidden" name="submitb" value="20">
+									<a href="design.php" name="designbtn"><div class="text">Design</div></a>
+								</form>
+
 								</div>
 							</div>
 						

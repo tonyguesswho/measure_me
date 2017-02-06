@@ -1,4 +1,4 @@
-<?php
+<?php   
 require("database.php");
 if(isset($_POST['signup'])){
 $fname=$_POST['firstname'];

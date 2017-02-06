@@ -399,6 +399,20 @@ footer{
 	color: white;
 
 }
+ .navh2>li>a{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin: 5px;
+  }
+.navh2>li.active>a,
+.navh2>li.active>a:focus,
+.navh2>li.active>a:hover
+{
+  background-color: #f4511e;
+  color: white;
+
+}
 .tabcd{
 	background-color: pink;
 	height: 500px;
@@ -447,6 +461,7 @@ padding: 3px;
 	border: 2px solid #FD4D00 ;
 	font-size:16px;
 	text-align: center;
+  background-color: white;
 }
 #mcard{
 	
@@ -460,3 +475,14 @@ padding: 3px;
 a{
 	text-decoration: none;
 }
+
+.red{
+    color:red;
+    }
+.form-area
+{
+    background-color: #FAFAFA;
+  padding: 10px 40px 60px;
+  margin: 10px 0px 60px;
+  border: 1px solid GREY;
+  }

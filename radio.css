@@ -1,0 +1,69 @@
+.choice{
+  text-transform: uppercase;
+  
+
+
+}
+
+.cc-selector input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            
+}
+.satin{background-image:url(img/satin.jpg);}
+.santo{background-image:url(img/santo.jpg);}
+.esquina{background-image:url(img/esquina.jpg);}
+.emer{background-image:url(img/emer.jpg);}
+.saladas{background-image:url(img/saladas.jpg);}
+.concordia{background-image:url(img/concordia.jpg);}
+.button1{background-image:url(img/button1.png);}
+.button2{background-image:url(img/button2.png);}
+.button3{background-image:url(img/button3.png);}
+.button4{background-image:url(img/button4.png);}
+.button42{background-image:url(img/button42.png);}
+.button6{background-image:url(img/button6.png);}
+.no_breast_pocket{background-image:url(img/no_breast_pocket.png);}
+
+.slanted2{background-image:url(img/slanted2.png);}
+.straight2{background-image:url(img/straight2.png);}
+.noflaps{background-image:url(img/noflaps.png);}
+.ticket{background-image:url(img/ticket.png);}
+
+.center_vents{background-image:url(img/center_vents.png);}
+.no_vents{background-image:url(img/no_vents.png);}
+.side_vents{background-image:url(img/side_vents.png);}
+.no_vest{background-image:url(img/no_vest.png);}
+.yesvest{background-image:url(img/vest.png);}
+
+
+
+.cc-selector input:active +.drinkcard-cc{opacity: .9;}
+.cc-selector input:checked +.drinkcard-cc{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.drinkcard-cc{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:100px;height:70px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+            filter: brightness(0.8) grayscale(.3) opacity(.9);
+}
+.drinkcard-cc:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+/* Extras */
+a:visited{color:#888}
+a{color:#444;text-decoration:none;}
+p{margin-bottom:.3em;}

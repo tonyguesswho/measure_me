@@ -1,6 +1,6 @@
 <?php
 
-
+ 
 require ("database.php");
 if(!isset($_SESSION['id'])){
 	$_SESSION['redirectURL']=$_SERVER['REQUEST_URI'];
@@ -66,6 +66,7 @@ $result=$db->query($sql);
 		
 		
 		<link rel="stylesheet" type="text/css" href="css/maiin.css">
+		<link rel="stylesheet" type="text/css" href="radio.css">
 	
 	</head>
 	<body>
@@ -148,26 +149,20 @@ $result=$db->query($sql);
 				<!-- Nav tabs -->
 				<ul class="nav nav-tabs navh" role="tablist">
 					<li role="presentation" class="active ta">
-						<a href="#measurement" aria-controls="tab" role="tab" data-toggle="tab" class="taa">measurement</a>
+						<a href="#measurement" aria-controls="tab" role="tab" data-toggle="tab" class="taa">
+
+						Measurement</a>
 					</li>
 					<li role="presentation" >
-						<a href="#fabric" aria-controls="tab" role="tab" data-toggle="tab">fabric</a>
+						<a href="#jacket" aria-controls="tab" role="tab" data-toggle="tab">Jacket</a>
 					</li>
 					<li role="presentation">
 						<a href="#fabric" aria-controls="tab" role="tab" data-toggle="tab">fabric</a>
 					</li>
 					<li role="presentation">
-						<a href="#fabric" aria-controls="tab" role="tab" data-toggle="tab">fabric</a>
+						<a href="#vest" aria-controls="tab" role="tab" data-toggle="tab">Vest</a>
 					</li>
-					<li role="presentation">
-						<a href="#fabric" aria-controls="tab" role="tab" data-toggle="tab">fabric</a>
-					</li>
-					<li role="presentation">
-						<a href="#fabric" aria-controls="tab" role="tab" data-toggle="tab">fabric</a>
-					</li>
-					<li role="presentation">
-						<a href="#fabric" aria-controls="tab" role="tab" data-toggle="tab">fabric</a>
-					</li>
+					
 				</ul>
 			
 				<!-- Tab panes -->
@@ -239,21 +234,158 @@ $result=$db->query($sql);
 					</div>
 
 					
-
+						<input type="submit" name="submitm" value="save">
 
 					</div>
-					<input type="submit" name="submitm" value="save">
+					
 					</form>
-					<div role="tabpanel" class="tab-pane" id="fabric">fabric
+					<div role="tabpanel" class="tab-pane" id="fabric">
+
+						<form method="post">
+						    
+						    
+						    <div class="cc-selector" style="margin-top: 50px;">
+						       <span class="choice">satin</span> <input id="satin" type="radio" name="fabric" value="satin" />
+						        <label class="drinkcard-cc satin" for="satin"></label>
+						     <span class="choice">santo</span><input id="santo" type="radio" name="fabric" value="santo" />
+						        <label class="drinkcard-cc santo" for="santo"></label>
+						     <span class="choice">esquina</span>   <input id="esquina" type="radio" name="fabric" value="esquina" />
+						        <label class="drinkcard-cc esquina" for="esquina"></label>
+						      <span class="choice">emer</span><input id="emer" type="radio" name="fabric" value="emer" />       
+						       <label class="drinkcard-cc emer" for="emer"></label>
+						      <span class="choice">concordia</span>  <input id="concordia" type="radio" name="fabric" value="concordia" />
+						        <label class="drinkcard-cc concordia" for="concordia"></label>
+						     <span class="choice">saladas</span>    <input id="saladas" type="radio" name="fabric" value="saladas" />
+						        <label class="drinkcard-cc saladas" for="saladas"></label>
+						        
+						    </div>
+						</form>
 
 					</div>
-					<div role="tabpanel" class="tab-pane" id="fabric">fabric</div>
-					<div role="tabpanel" class="tab-pane" id="fabric">fabric</div>
-					<div role="tabpanel" class="tab-pane" id="fabric">fabric</div>
-					<div role="tabpanel" class="tab-pane" id="fabric">fabric</div>
-					<div role="tabpanel" class="tab-pane" id="fabric">fabric</div>
+					<div role="tabpanel" class="tab-pane" id="jacket">
+					<div role="tabpanel">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs navh2" role="tablist">
+							<li role="presentation" class="active">
+								<a href="#button" aria-controls="button" role="tab" data-toggle="tab">Buttons</a>
+							</li>
+							<li role="presentation">
+								<a href="#pockets" aria-controls="pockets" role="tab" data-toggle="tab">Pockets</a>
+							</li>
+							<li role="presentation">
+								<a href="#vents" aria-controls="vents" role="tab" data-toggle="tab">Vents</a>
+							</li>
+						</ul>
+					
+						<!-- Tab panes -->
+						<div class="tab-content">
+						
+							<div role="tabpanel" class="tab-pane active" id="button">
+								<div class="cc-selector" style="margin-top: 50px;">
+									<form method="post">
+	    
+	    
+									    <div class="cc-selector" style="margin-top: 50px;">
+									       <span class="choice">1 button</span> <input id="button1" type="radio" name="jacket" value="button1" />
+									        <label class="drinkcard-cc button1" for="button1"></label>
+									     <span class="choice">2 buttons</span><input id="button2" type="radio" name="jacket" value="button2" />
+									        <label class="drinkcard-cc button2" for="button2"></label>
+									     <span class="choice">3 buttons</span><input id="button3" type="radio" name="jacket" value="button3" />
+									        <label class="drinkcard-cc button3" for="button3"></label>
+									      <span class="choice">4 buttons</span><input id="button4" type="radio" name="jacket" value="button4" />       
+									       <label class="drinkcard-cc button4" for="button4"></label>
+									      <span class="choice">4 buttons</span>  <input id="button42" type="radio" name="jacket" value="button42" />
+									        <label class="drinkcard-cc button42" for="button42"></label>
+									     <span class="choice">6 buttons</span>    <input id="button6" type="radio" name="jacket" value="button6" />
+									        <label class="drinkcard-cc button6" for="button6"></label>
+									        
+									    </div>
+									</form>
+								</div>
+
+						</div>
+							<div role="tabpanel" class="tab-pane" id="pockets">
+								<div class="cc-selector" style="margin-top: 50px;">
+									<form method="post">
+	    
+	    
+									    <div class="cc-selector" style="margin-top: 50px;">
+									       <span class="choice">No breast pocket</span> <input id="no_breast_pocket" type="checkbox" name="no_breast_pocket" value="no_breast_pocket" />
+									        <label class="drinkcard-cc no_breast_pocket" for="no_breast_pocket"></label>
+									     
+									     <span class="choice">2 Straight</span><input id="Straight2" type="checkbox" name="straight2" value="straight2" />
+									        <label class="drinkcard-cc button3" for="button3"></label>
+									      <span class="choice">2 Slanted</span><input id="slanted2" type="checkbox" name="slanted2" value="slanted2" />       
+									       <label class="drinkcard-cc slanted2" for="slanted2"></label>
+									      <span class="choice">no flaps</span>  <input id="noflaps" type="checkbox" name="noflaps" value="noflaps" />
+									        <label class="drinkcard-cc noflaps" for="noflaps"></label>
+									     <span class="choice">ticket</span>    <input id="ticket" type="checkbox" name="ticket " value="ticket" />
+									        <label class="drinkcard-cc ticket" for="ticket"></label>
+									        
+									    </div>
+									</form>
+								</div>
+
+							</div>
+							<div role="tabpanel" class="tab-pane" id="vents">
+							<div class="cc-selector" style="margin-top: 50px;">
+									<form method="post">
+	    
+	    
+									    <div class="cc-selector" style="margin-top: 50px;">
+									       
+									      <span class="choice">center vents</span><input id="center_vents" type="radio" name="vents" value="center_vents" />       
+									       <label class="drinkcard-cc center_vents" for="center_vents"></label>
+									      <span class="choice">side vents</span>  <input id="side_vents" type="radio" name="vents" value="side_vents" />
+									        <label class="drinkcard-cc side_vents" for="side_vents"></label>
+									     <span class="choice">no vents</span>    <input id="no_vents" type="radio" name="vents" value="no_vents" />
+									        <label class="drinkcard-cc no_vents" for="no_vents"></label>
+									        
+									    </div>
+									</form>
+								</div>
+								
 
 
+
+
+
+
+
+
+							</div>
+						</div>
+					</div>
+					
+
+						
+
+
+
+
+
+					</div>
+					<div role="tabpanel" class="tab-pane" id="vest">
+						
+						<div class="cc-selector" style="margin-top: 50px;">
+									<form method="post">
+	    
+	    
+									    <div class="cc-selector" style="margin-top: 50px;">
+									       
+									      <span class="choice">no vest</span><input id="no_vest" type="radio" name="yesvest" value="no_vest" />       
+									       <label class="drinkcard-cc no_vest" for="no_vest"></label>
+									     <span class="choice">vest</span><input id="yesvest" type="radio" name="yesvest" value="yesvest" />       
+									       <label class="drinkcard-cc yesvest" for="yesvest"></label>
+									    </div>
+									</form>
+								</div>
+
+
+
+
+					</div>
+					
 				</div>
 			</div>
 
@@ -304,9 +436,7 @@ $result=$db->query($sql);
 
 
 		</div>
-		<footer id="footd">
-			<h5 class="text-center">&copy; 2017 measure.me</h5>
-		</footer>
+		
 
 
 

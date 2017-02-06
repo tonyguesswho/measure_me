@@ -1,8 +1,9 @@
 <?php
 require ('database.php');
+
+
 if(isset($_POST['login'])){
-	$_SESSION['id']=TRUE;
-	header('Location:'.$_SESSION['redirectURL']);
+	
 
 
 
@@ -22,9 +23,9 @@ echo "sometin is incorrect";
 	$_SESSION['lastname']=$row['lastname'];
 	$_SESSION['email']=$row['email'];
 	$_SESSION['sex']=$row['sex'];
-
-}
 header("Location: index2.php");
+}
+
 }
 
 
@@ -37,6 +38,8 @@ header("Location: index2.php");
 
 
 ?>
+
+
 
 
 
